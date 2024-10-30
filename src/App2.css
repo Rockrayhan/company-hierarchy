@@ -1,0 +1,35 @@
+.App {
+    text-align: center;
+  }
+  
+  .tree-node {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+  }
+  
+  .tree-node p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  
+  .tree {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
