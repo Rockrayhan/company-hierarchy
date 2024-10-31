@@ -30,13 +30,35 @@ const App = () => {
 
     return (
       <>
-      {/* Company */}
+      {/* Company + Department*/}
         {nodes.map((node) => (
           <TreeNode
             key={node.id}
             label={
               <div className="inline-block p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
-                {node.hierarchy_name} - Type: {node.company_definition_id}
+                {/* {node.hierarchy_name} - Type: {node.company_definition_id} */}
+
+
+
+                <div className="flex gap-2 px-10">
+                <img
+                  className="h-10 w-10 border-2 border-gray-300 rounded-full"
+                  src="https://png.pngtree.com/template/20191005/ourmid/pngtree-logo-people-group-team-image_314502.jpg"
+                  alt=""
+                />
+
+                <h2 className="font-bold"> {group.hierarchy_name} </h2>
+              </div>
+
+              <hr  className="my-3 w-full"/>
+              <div className="flex gap-5 text-sm font-semibold my-4">
+                <span> Total Employees </span> 
+                <span> Total Male  </span>
+                <span> Total Female </span>
+              </div>
+
+                <small class="bg-gray-200 px-1 rounded-md absolute bottom-0 right-8"> {companyHierarchy.filter(item => item.upper_label === group.id).length} </small>
+
               </div>
             }
           >
